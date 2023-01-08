@@ -7,47 +7,85 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>My Website</title>
+    
   </head>
   <body>
     <!-- Navbar -->
-    <body style="background-image: url('arkaplan4.jpg'); background-size: cover;"></body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-selection ">
-      <a class="navbar-brand" href="#" >CineFil</a>
+    <body style="background-color:rgb(197, 189, 189); background-size: rgb(236, 214, 214);"></body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+      <a class="navbar-brand"  href="#" >CineFil</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Anasayfa</a>
+            <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+          </li>
+          <li class="nav-item dropdown px-5 ">
+            <a class="nav-link dropdown-toggle" href="galeri.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Film Albümü
+            </a>
+            <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5"  href="galeri.html">Seven</a>
+                <a class="dropdown-item px-5"  href="galeri.html">V for Vendetta</a>
+                <a class="dropdown-item px-5"  href="galeri.html">The Shning</a>               
+            </div>
+        </li> 
+          
+        <li class="nav-item dropdown px-5 ">
+          <a class="nav-link dropdown-toggle" href="dizialbümü.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dizi Albümü
+          </a>
+          <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
+              <a class="dropdown-item px-5"  href="dizialbümü.html">The Office</a>
+              <a class="dropdown-item px-5"  href="dizialbümü.html">Stranger Things</a>
+              <a class="dropdown-item px-5"  href="dizialbümü.html">After Life</a>               
+          </div>
+      </li> 
+          <li class="nav-item">
+            <a class="nav-link" href="iletişim.html">İletişim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Film Albümü</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Dizi Albümü</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">İletişim</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"></a>
+            <a class="nav-link" href="harita.html">Harita</a>
           </li>
         </ul>
       </div>
+      
     </nav>
 
     <!-- Breadcrumbs -->
-    <nav aria-label="breadcrumb" >
-      <ol class="breadcrumb bg-dark breadcrumb text-light" >
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
         <li class="breadcrumb-item active" aria-current="page">Film Albümü</li>
         <li class="breadcrumb-item active" aria-current="page">Dizi Albümü</li>
         <li class="breadcrumb-item active" aria-current="page">İletişim</li>
+        <li class="breadcrumb-item active" aria-current="page">Harita</li>
+
       </ol>
     </nav>
+    
+
+    <div class="container mt-5">
+      <div class="row">
+            
+        <div class="col-4">         
+          <div class="card">           
+            <img src="imdb2.jpg" class="card-img-top" alt="image1" width="200" height="520"  onclick="viewImage('image1.jpg')" style="float: left;">
+                                 
+          </div>
+         <br>
+
+        </div>
+        <br>
+        <div style="margin-left: 5px;">  <h1>  Merhaba CineFil'e Hoşgeldiniz</h1> <br> <div style ="font-size: 20px;"> Size en kaliteli ve jüriler tarafından yüksek puan alan film ve dizilerin <br>sıralamasını verebilir ama CineFil'de size şu ana kadar izlediğim ve en keyif aldığım <br> 3 dizi ve 3 filmden bahsedeceğim umarım sizin için keyifli geçer.</div> </div>
+      </div>
+    </div>
 
     
         
