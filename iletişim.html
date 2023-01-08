@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>My Website</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <body style="background-color:rgb(197, 189, 189); background-size: rgb(236, 214, 214);"></body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">CineFil</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+          </li>
+          <li class="nav-item dropdown px-5 ">
+            <a class="nav-link dropdown-toggle" href="galeri.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Film Albümü
+            </a>
+            <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5"  href="galeri.html">Seven</a>
+                <a class="dropdown-item px-5"  href="galeri.html">V for Vendetta</a>
+                <a class="dropdown-item px-5"  href="galeri.html">The Shning</a>               
+            </div>
+        </li> 
+          
+        <li class="nav-item dropdown px-5 ">
+          <a class="nav-link dropdown-toggle" href="dizialbümü.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Dizi Albümü
+          </a>
+          <div class="dropdown-menu"  aria-labelledby="navbarDropdown">
+              <a class="dropdown-item px-5"  href="dizialbümü.html">The Office</a>
+              <a class="dropdown-item px-5"  href="dizialbümü.html">Stranger Things</a>
+              <a class="dropdown-item px-5"  href="dizialbümü.html">After Life</a>               
+          </div>
+          <li class="nav-item">
+            <a class="nav-link" href="iletişim.html">İletişim</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="harita.html">Harita</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Breadcrumbs -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Film Albümü</li>
+        <li class="breadcrumb-item active" aria-current="page">Dizi Albümü</li>
+        <li class="breadcrumb-item active" aria-current="page">İletişim</li>
+        <li class="breadcrumb-item active" aria-current="page">Harita</li>
+
+      </ol>
+    </nav>
+
+    <!-- Photo Album -->
+    <div class="container mt-5">
+      <div class="row">
+ <!-- Contact -->
+ <div class="container mt-5">
+    <h2>İletişim</h2>
+    <form>
+      <div class="form-group">
+        <label for="nameInput">İsim</label>
+        <input type="text" class="form-control" id="nameInput">
+      </div>
+      <div class="form-group">
+        <label for="emailInput">Email</label>
+        <input type="email" class="form-control" id="emailInput">
+      </div>
+      <div class="form-group">
+        <label for="messageInput">Mesaj</label>
+        <textarea class="form-control" id="messageInput" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Gönder</button>
+    </form>
+  </div>
+
+  <!-- Map -->
+  <div class="container mt-5">
+    <div id="map"></div>
+  </div>
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+  <script>
+    function initMap() {
+      var location = {lat: -34.397, lng: 150.644};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 8,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+  </script>
+
+  <!-- Image Modal Script -->
+  <script>
+    function viewImage(imageUrl) {
+      $('#imageModalImage').attr('src', imageUrl);
+      $('#imageModal').modal('show');
+    }
+  </script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.16.6/dist/umd/popper.min.js" integrity="sha384-cBhZV0zGKjN5xH8yC5/g+f3tZp3H9q8FcWY1vLnA2R2IyM8PWdDtM7I+nnT9T9T" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>       
